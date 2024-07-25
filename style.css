@@ -1,0 +1,973 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: SF Pro Display, SF Pro Icons, 
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+    
+}
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+#nav-one {
+    background-color:rgba(0, 0, 0, .04);
+    padding: 7px;
+}
+.header .nav-top .navone-ul{
+    display: flex;  
+    
+}
+.header .nav-top  li{
+    list-style-type: none;
+    padding-right: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+
+    
+}
+.header .nav-top  li a{
+    text-decoration: none;
+    color: black;
+    font-family: SF Pro Display, SF Pro Icons, 
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    
+    
+}
+#nav-two .navtwo-ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-top: 10px;
+    
+}
+.navtwo-ul li{
+    font-family: SF Pro Display, SF Pro Icons, 
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+}
+ .hover-searchbar {
+    display: none;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    right: 0;
+    height: 50vh;
+    background-color: white; 
+}
+.hover-searchbar .hoversub-section{
+    display: flex;
+    padding-left: 5%;
+}
+.hover-searchbar .search-content{
+    display: flex;
+    margin-top: 3%;
+    padding-left: 14%;
+    
+}
+  .close-icon{
+    width: 3%;
+    cursor: pointer;
+    margin-left: 100px;
+}
+.hover-searchbar .search-icon img{
+    width: 100%;
+}
+
+.hover-searchbar .input {
+    height: 30px;
+    font-size: 24px;
+    line-height: 1.1666666667;
+    font-weight: 600;
+    letter-spacing: .009em;
+    font-family: SF Pro Display, SF Pro Icons,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+    position: relative;
+    z-index: 1;
+    /* margin-inline-start: -30px;
+    margin-inline-end: -31px;
+    padding-inline-start: 34px;
+    padding-inline-end: 34px; */
+    width: 50%;
+    height: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: var(--r-globalnav-search-input-value-color);
+    line-height: 1;
+}
+.hover-searchbar .searchbar-position{
+    padding-left: 12%;
+    padding-top: 3%;
+}
+.search-barlink{
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    gap: 1%;
+}
+.searchbar-position .quick-link{
+    font-size: 12px;
+    line-height: 1.3333733333;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: grey;
+    padding-bottom: 1%;
+}
+.search-barlink a{
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--r-globalnav-search-input-value-color);
+}
+.search-barlink img{
+    display: flex;
+    justify-items: center;
+    text-align: center;
+}
+.wrapper .navtwo-ul li a{
+    text-decoration: none; 
+    color: black;
+}
+#nav-two .wrapper  .nav-img img{
+    width: 20px;
+}
+#nav-three .navthree-ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.navthree-ul a{
+    text-decoration: none;
+    font-size: 23px;
+    line-height: 1.3333733333;
+    font-weight: 600;
+    color: black;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+#nav-three .navthree-ul .shop-button{
+    padding: 0px 10px ;
+    background-color: blue;
+    border-radius: 20px;
+    color: white;
+    border: none;
+}
+.nav-four{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .04);
+}
+.nav-four .navfour-text{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    font-family: SF Pro Text, SF Pro Icons,
+     Helvetica Neue, Helvetica, Arial, sans-serif;
+    
+}
+.navfour-text .shop-now{
+    text-decoration: none;
+    color: rgb(0, 167, 189);
+}
+#education-store {
+    background-color: rgba(0, 0, 0, .04);
+    margin-top: 2px;
+    justify-content:center;
+}
+#education-store .header-img {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    width: 100%;
+}
+#education-store .header-img img{
+    width:35%;
+}
+.storehelp-right .help-icon img{
+    width: 50%;
+}
+.storehelp-right .visitapple-icon{
+    padding-right: 10px;
+
+}
+
+.educationstore-text{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.educationstore-text .store-text .edu-store{
+    color: #08827c;
+}
+.educationstore-text .store-text {
+    font-size: 48px;
+    width: 50%;
+    color: #6e6e73;
+    font-weight: 600;
+    letter-spacing: -.003em;
+    line-height: 1.0834933333;
+    font-family: SF Pro Display, SF Pro Icons,
+     Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.educationstore-text .store-text {
+    display: flex;
+}
+.educationstore-text .store-text .edu-subheader{
+    display: inline;
+    font-family: SF Pro Display, SF Pro Icons,
+     Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -.003em;
+    line-height: 1.0834933333;
+}
+
+.educationstore-text .store-help .helptext{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+.educationstore-text .store-help .applevisit-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+.educationstore-text .store-help a{
+    color: #06c;
+    text-decoration: none;
+}
+.store-right{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.storehelp-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.education-tools{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 80px 0px;
+}
+.education-tools .tools {
+    display: block;
+    justify-items: center;
+    text-align: center;  
+}
+.education-tools .tools img{
+    width: 100%;
+}
+.education-tools .tools h6{
+    color: #1d1d1f;
+    font-size: 14px;
+    font-family:  SF Pro Display, SF Pro Icons,
+     Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+#advanced-studies{
+    background-color:rgba(0, 0, 0, .04) ;
+    padding-bottom: 80px;
+    padding:40px 0px 40px 100px;    
+}
+#advanced-studies .advanced-heading{
+    display: flex;
+}
+.advanced-heading .sentence1-studies{
+    font-family: SF Pro Display, SF Pro Icons,
+     Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: .007em;
+}
+.advanced-heading .sentence2-studies {
+    font-size: 28px;
+    font-weight: 600;
+    color: #6e6e73;
+    letter-spacing: .007em;
+    font-family: SF Pro Display, SF Pro Icons,
+     Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.limitedoffer-card {
+    display: flex;
+    margin-top: 50px;
+    /* overflow: hidden; */
+}
+.limitedoffer-card  .card1-img  {
+    background-image: url("image/store-card-40-bts-offer-202406_GEO_IN.jpg");
+    /* object-fit: contain; */
+    background-size:cover;
+    background-position: center;
+    width: 380px;
+    height: 55vh;
+    border-radius: 20px;
+    display: block;
+    transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+
+    
+    
+}
+.limitedoffer-card .offercard-2 {
+    background-image: url("image/store-card-40-bts-macbook-air-202406.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 380px;
+    height: 55vh;
+    border-radius: 20px;
+    transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+ .card-top{
+    display: flex;
+    margin: 0px 10px 0px 10px;
+    
+    justify-content: space-between;
+}
+.card-top img{
+    width: 40px;
+
+}
+
+
+.card1-offertext{
+    margin: 30px 0px 20px 0px;
+    color: #b64400;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.3333733333;
+    font-family: SF Pro Text, SF Pro Icons,
+     Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.card1-subhead{
+    margin: 0px 10px 10px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.1428571429;
+    color: #1d1d1f;
+    font-family: SF Pro Display, SF Pro Icons,
+     Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.from-price{
+    color: #1d1d1f;
+    font-family: SF Pro Text, SF Pro Icons,
+     Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    line-height: 1.2353641176;
+    margin: 0px 10px;
+    text-decoration: none;
+}
+.limitedoffer-card .offercard-3 {
+    background-image: url("image/store-card-40-bts-ipad-air-202406.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 380px;
+    height: 55vh;
+    border-radius: 20px;
+    transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+.limitedoffer-card .offercard-4 {
+    background-image: url("image/store-card-40-bts-macbook-pro-202406.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 380px;
+    height: 55vh;
+    border-radius: 20px;transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+.limitedoffer-card .offercard-5 {
+    background-image: url("image/store-card-40-bts-ipad-pro-202406.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 380px;
+    height: 55vh;
+    border-radius: 20px;
+    transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+.limitedoffer-card .offercard-6 {
+    background-image: url("image/store-card-40-bts-imac-202406.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 380px;
+    height: 55vh;
+    border-radius: 20px;
+    transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+
+.limitedoffer-card .offercard-7 {
+    background-image: url("image/store-card-40-bts-mac-mini-202406.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 380px;
+    height: 55vh;
+    border-radius: 20px;
+    transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+.swiper-container{
+    width: 1144px;
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        color: white;
+        background-color: black;
+        &:after{
+            color: white;
+        }
+    }  
+}
+#education-offer{
+    background-color: rgba(0, 0, 0, .04);
+    padding:40px 0px 40px 100px
+}
+.educationoffer-text{
+    display: flex;
+}
+.educationoffer-text .sentence1-offer{
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: .007em;
+}
+.educationoffer-text .sentence2-offer {
+    font-size: 28px;
+    font-weight: 600;
+    color: #6e6e73;
+    letter-spacing: .007em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.educationoffer-text{
+    padding-bottom: 40px;
+}
+.swiper-slide .exclusive-card1 {
+    background-image: url("image/store-card-40-bts-applecare-discount-sticker-202406.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 380px;
+    height: 55vh;
+    border-radius: 20px;
+    transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+.exclusive-subhead{
+    padding: 20px;
+
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.1428571429;
+    color: #1d1d1f;
+    font-family: SF Pro Display, SF Pro Icons,
+     Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.swiper-slide .exclusive-card2 {
+    background-image: url("image/store-card-40-bts-education-pricing-sticker-202406.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 380px;
+    height: 55vh;
+    border-radius: 20px;
+    transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+.swiper-slide .exclusive-card3 {
+    background-image: url("image/store-card-40-bts-edu-applecare-sticker-202406.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 380px;
+    height: 55vh;
+    border-radius: 20px;
+    transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+
+
+.swiper-slide .exclusive-card4 {
+    background-image: url("image/store-card-40-bts-edu-itunes-sticker-202406.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 380px;
+    height: 55vh;
+    border-radius: 30px;
+    transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+#accessories{
+    background-color: rgba(0, 0, 0, .04);
+    padding:40px 0px 40px 100px
+    
+}
+
+
+.exclusive-subhead{
+    padding: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.1428571429;
+    color: #1d1d1f;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.accessories-heading{
+    display: flex;
+    padding-bottom: 30px;
+}
+ .sentence1-accessories{
+    font-family: SF Pro Display, SF Pro Icons,
+     Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: .007em;
+}
+.sentence2-accessories {
+    font-size: 28px;
+    font-weight: 600;
+    color: #6e6e73;
+    letter-spacing: .007em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.accessories-card1{
+    background-image: url("image/store-card-40-bts-accessories-202406.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 380px;
+    height: 60vh;
+    border-radius: 20px;
+    transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+.accessories-card2{
+    transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+.white-card{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 60vh;
+    border-radius: 20px;
+    background-color: white;
+
+}
+.white-card .svg1img{
+    padding: 5% 85% 0%;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 40px;
+}
+.white-card .pencil-pro {
+    width: 60%;
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    padding: 6.5% 20%;
+}
+.white-card  img{
+    width: 0%;
+}
+
+.accessories-subhead{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 50px;
+    font-size: 28px;
+    font-weight: 550;
+    line-height: 1.1428571429;
+    color: #1d1d1f;
+    font-family: SF Pro Display, SF Pro Icons, 
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.card1-text {
+    padding-left: 12px;
+    color: #b64400;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.3333733333;
+    font-family: SF Pro Text, SF Pro Icons,
+     Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.accessories-price{
+    color: #1d1d1f;
+    font-family: SF Pro Text, SF Pro Icons,
+     Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    line-height: 1.2353641176;
+    text-decoration: none;
+    display: flex;
+    justify-items: center;
+    padding: 10px 20px 10px ;
+}
+.accessories-card3{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    border-radius: 30px;
+    transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+.accessories-card4{
+    transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+
+.devices-subhead{
+    display: flex;
+    padding: 20px 20px 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.1428571429;
+    color: #1d1d1f;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.accessories-card5{
+    transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+.accessories-card6{
+    transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+.accessories-card7{
+    transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+.accessories-card8{
+    transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+.accessories-card9{
+    transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+.red-text {
+    padding: 20px;
+    color: #b64400;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.3333733333;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.white-card .ipad-pro {
+    width: 60%;
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    padding: 0 20%;
+}
+.colors{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.colors .white-color{
+    width: 4%;
+}
+.colors .brown-color{
+    width: 4%;
+}
+.accessories-mrp{
+    color: #1d1d1f;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    line-height: 1.2353641176;
+    text-decoration: none;
+    display: flex;
+    justify-items: center;
+    padding: 5px 20px 10px ;
+}
+.airpod3rd-subhead{
+    display: flex;
+    padding: 20px 20px 7px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.1428571429;
+    color: #1d1d1f;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+#apple-store{
+    background-color: rgba(0, 0, 0, .04);
+    padding:40px 0px 40px 100px
+}
+.applestore-text{
+    display: flex;
+    padding-bottom:40px ;
+}
+.bg-card{
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+    transition: transform ease 0.2s;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+.bg-icon{
+    padding: 40px 150px 5px 20px;
+    width: 13%;
+}
+.bg-paragraph{
+    display: flex;
+    padding: 0 0 0 20px;
+}
+.bg-black{
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0 5px;
+    color: #1d1d1f;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, 
+    Helvetica, Arial, sans-serif;
+}
+.bg-highlight{
+    color: #68cc45;
+    fill: #68cc45;
+    font-family: SF Pro Display, SF Pro Icons, 
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+.bg-imojie{
+    color: #ac39ff;
+    fill: #ac39ff;
+    font-family: SF Pro Display, SF Pro Icons, 
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+.greenblack-text{
+    padding-left: 20px;
+    width: 77%;
+}
+.highlight-blue{
+    color: #0071e3;
+    fill:#0071e3;
+    font-family: SF Pro Display, SF Pro Icons, 
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+.bottom-spotlight{
+    background-color: rgba(0, 0, 0, .04);
+}
+.blueblack-text{
+    padding-left: 20px;
+    width: 70%;
+}
+.blueblack-text1{
+    padding-left: 20px;
+    width: 80%;
+}
+.bottom-spotlight{ 
+    padding:40px 0px 40px 100px
+}
+.spotlight-bottom{
+    padding: 40px 0px 20px 0px;
+}
+.spotlight-bottom h4{
+    font-size: 30px;
+    font-family: SF Pro Display, SF Pro Icons, 
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.spotbottom-button{
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.spotbottom-button .order-bn{
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    border-width: 1px;
+    border-color: black;
+    background-color: rgba(117, 112, 112, 0.04);;
+}
+#footer{
+    padding-top: 50px;
+    
+    
+}
+#footer .ftr-1paragraph{
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    line-height: 1.3333733333;
+    color: #0000008f;
+}
+#footer .ftr-1paragraph a{
+    color: #000000b8;
+
+}
+.line{
+   margin: 20px 0;
+   color: #0000008f;
+}
+
+
+.mid-footer .mid img{
+    width: 2%;
+    color: #0000008f;
+}
+.mid-footer .mid{
+    display: flex;
+    gap: 10px;
+}
+.mid-footer .mid a{
+   text-decoration: none;
+   color:#0000008f;
+}
+.mid-footer .mid span{
+    color: #0000008f;
+    font-size: 15px;
+}
+.footermid-section{
+    display: flex;
+    justify-content: space-between;
+    font-family:SF Pro Display, SF Pro Icons, 
+    Helvetica Neue, Helvetica, Arial, sans-serif; 
+}
+.footermid-section .list a{
+    text-decoration: none;
+    color: #0000008f;
+}
+.footermid-section .list h5{
+    padding: 15px 0;
+    color:black ;
+    font-size: 12px;
+    font-weight: 500;
+}
+.footermid-section .list h6{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    line-height: 1.3333733333;
+    padding-bottom: 10px;
+    
+} 
+.mid-footer h3{
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    line-height: 1.3333733333;
+    padding-bottom: 10px;
+    color: #0000008f;
+}
+.mid-footer h3 a{
+    color: #06c;
+}
+.footer-bottom{
+    display: flex;
+    gap: 40px;
+}
+.footer-bottom ul{
+    display: flex;
+    
+}
+
+.mid-bottom-text h3{
+    font-size: 13px;
+    color: #0000008f;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    line-height: 1.3333733333;
+}
+
+.footer-bottom ul li{
+    list-style: none;
+    color: #0000008f;
+    padding-left: 8px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    line-height: 1.3333733333;
+}
+.footer-link{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom ul li a{
+    text-decoration: none;
+    color: #0000008f;
+}
+.footer-link h4{
+    gap: 5px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    line-height: 1.3333733333;
+    color: #0000008f;
+}
+
+
+
+
