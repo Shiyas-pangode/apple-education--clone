@@ -38,6 +38,9 @@
     
     
 }
+#nav-two{
+    padding: 5px 0px;
+}
 #nav-two .navtwo-ul{
     display: flex;
     list-style: none;
@@ -51,11 +54,42 @@
     font-size: 13px;
     font-weight: 400;
     letter-spacing: -.01em;
+
+}
+
+@keyframes slideIn{
+    from{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideOut{
+    from{
+        opacity: 1;
+        transform: translateY(0);
+    }to{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+.hover-searchbar.show {
+    display: flex;
+    animation: slideIn 0.5s forwards; 
+    display: flex;
+
+}
+.hover-searchbar.hide {
+    animation: slideOut 0.5s forwards; 
+    opacity: 0;
+    display: none;
 }
  .hover-searchbar {
     display: none;
     flex-direction: column;
-    /* justify-content: flex-start; */
     position: fixed;
     z-index: 999;
     width: 100%;
@@ -63,8 +97,9 @@
     right: 0;
     height: 50vh;
     background-color: white; 
-    transform: translateY(-20px);
-    transition: opacity 0.3s ease, transform 3s ease;
+    animation: none;
+    transition: opacity 0.5s ease-out;
+    
 }
 
 .hover-searchbar .hoversub-section{
@@ -96,10 +131,6 @@
     Helvetica Neue, Helvetica, Arial, sans-serif;
     position: relative;
     z-index: 1;
-    /* margin-inline-start: -30px;
-    margin-inline-end: -31px;
-    padding-inline-start: 34px;
-    padding-inline-end: 34px; */
     width: 50%;
     height: 100%;
     border: none;
@@ -141,6 +172,7 @@
     justify-items: center;
     text-align: center;
 }
+
 .wrapper .navtwo-ul li a{
     text-decoration: none; 
     color: black;
@@ -165,11 +197,12 @@
     font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 #nav-three .navthree-ul .shop-button{
-    padding: 0px 10px ;
+    padding: 5px 10px ;
     background-color: blue;
     border-radius: 20px;
     color: white;
     border: none;
+    cursor: pointer;
 }
 .nav-four{
     padding: 10px;
@@ -189,6 +222,46 @@
     text-decoration: none;
     color: rgb(0, 167, 189);
 }
+.swiper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .swiper-button-prev img{
+    width: 100%;
+    display: block;
+  }
+  .swiper-button-next img{
+    width: 100%;
+    display: block;
+  }
+  .swiper-button-prev {
+    background-color: #ffffff32;
+    padding: 6px 15px;
+    filter: invert(1) brightness(0.3) contrast(2);
+    border-radius: 50%;
+    font-weight: 900;
+    
+  }
+  .swiper-button-next {
+    background-color: #ffffff32;
+    padding: 6px 15px;
+    filter: invert(1) brightness(0.3) contrast(2);
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 #education-store {
     background-color: rgba(0, 0, 0, .04);
     margin-top: 2px;
@@ -974,7 +1047,17 @@
     line-height: 1.3333733333;
     color: #0000008f;
 }
+@media (max-width: 760px) {
+    .swiper-button-next {
+      right: 20px;
+      transform: rotate(90deg);
+    }
 
+    .swiper-button-prev {
+      left: 20px;
+      transform: rotate(90deg);
+    }
+  }
 
 
 
