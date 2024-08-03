@@ -59,10 +59,14 @@
     position: fixed;
     z-index: 999;
     width: 100%;
+    top: 0;
     right: 0;
     height: 50vh;
     background-color: white; 
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 3s ease;
 }
+
 .hover-searchbar .hoversub-section{
     display: flex;
     padding-left: 5%;
@@ -143,6 +147,9 @@
 }
 #nav-two .wrapper  .nav-img img{
     width: 20px;
+}
+#nav-three{
+    display: none;
 }
 #nav-three .navthree-ul {
     display: flex;
