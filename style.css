@@ -9,10 +9,12 @@
     width: 80%;
     margin: 0 auto;
     max-width: 1280px;
+    
 }
 #nav-one {
     background-color:rgba(0, 0, 0, .04);
     padding: 7px;
+   
 }
 .header .nav-top .navone-ul{
     display: flex;  
@@ -38,8 +40,57 @@
     
     
 }
+.support{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40vh;
+    display: none;
+}
+.support .support-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    
+}
+.support .support-content h4{
+    font-size: 40px;
+    font-weight: 600px;
+    color: #1d1d1f;
+    padding-bottom: 1%;
+}
+.support .support-content .content-help{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 20px;
+}
+.support .support-content .content-help span{
+    padding: 25px 10px;
+    background-color: #dbdbe3;
+    border-radius: 12px;
+}
+.support .support-content .content-help span h5{
+    color: #0071e3;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.support .support-content h3 {
+    padding-top: 2%;
+}
+.support .support-content h3 a{
+    color: #06c;
+}
 #nav-two{
     padding: 5px 0px;
+    position: relative;
 }
 #nav-two .navtwo-ul{
     display: flex;
@@ -121,7 +172,7 @@
     width: 100%;
 }
 
-.hover-searchbar .input {
+.hover-searchbar #input {
     height: 30px;
     font-size: 24px;
     line-height: 1.1666666667;
@@ -172,6 +223,33 @@
     justify-items: center;
     text-align: center;
 }
+.line{
+    border: 1px solid black;
+}
+.hover-searchbar .input-items{
+    display: none;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    background-color:rgba(248, 242, 242, 0.97);
+    border-radius: 12px;
+    gap: 5px;
+    padding: 10px 0px;
+    align-items: center;
+
+    
+}
+.hover-searchbar .input-items .input-items-airpod h5{
+    color: #0071e3;
+    
+}
+
+.hover-searchbar .input-items .input-items-airpod img{
+    display: block;
+    width: 100%;
+}
+
+
 
 .wrapper .navtwo-ul li a{
     text-decoration: none; 
@@ -182,24 +260,45 @@
 }
 #nav-three{
     display: none;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    
+}
+#nav-three .wrapper .empty{
+    font-size: 22px;
+    padding: 40px 0px 20px 40px;
+    color: black;
+    font-weight: 400px;
 }
 #nav-three .navthree-ul {
     display: flex;
-    justify-content: space-between;
+    padding-left: 40px;
+    flex-direction: column;
+    width: 100%;
+    height: 25vh;
     margin: 10px 0px;
+    background-color: white;
+}
+.navthree-ul span{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.3333733333;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: grey;
+    padding-bottom: 1%;
 }
 .navthree-ul a{
-    text-decoration: none;
-    font-size: 23px;
-    line-height: 1.3333733333;
-    font-weight: 600;
-    color: black;
-    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #0071e3;
+    font-size: 13px;
 }
 #nav-three .navthree-ul .shop-button{
+    margin-top: 1%;
     padding: 5px 10px ;
-    background-color: blue;
-    border-radius: 20px;
+    background-color:grey;
+    border-radius: 8px;
     color: white;
     border: none;
     cursor: pointer;
@@ -256,11 +355,8 @@
 
 
   .swiper-slide {
-    text-align: center;
     font-size: 18px;
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
 #education-store {
     background-color: rgba(0, 0, 0, .04);
@@ -847,6 +943,7 @@
     width: 350px;
     background-color: white;
     border-radius: 20px;
+    gap: 5px;
     transition: transform ease 0.2s;
     &:hover{
         transform: scale(1.03);
@@ -863,7 +960,7 @@
 .bg-black{
     font-size: 24px;
     font-weight: 600;
-    padding: 0 5px;
+    padding-left: 5px;
     color: #1d1d1f;
     font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, 
     Helvetica, Arial, sans-serif;
